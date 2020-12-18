@@ -10,9 +10,9 @@
 body
 {
     font-family: Roboto, calibri, corbel; /*roboto marche pas comme ça*/
-    margin-left: 190px;
+    margin-left: 500px;
     margin-right: 190px;
-    width: 1580px;
+    max-width: 1200px;
 }
 header
 {
@@ -27,4 +27,27 @@ header
     justify-content: stretch; /*marche pas*/
     align-items: center;
     list-style-type: none;
+}
+#banniere
+{
+    height: 450px;
+    width: 40px;
+    float: center;
+}
+h1
+{
+    font-size: 3em;
+    color: white;
+    margin-left: 200px;
+}
+#corps-blanc
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 300px;
+}
+article
+{
+    display: flex;
 }
