@@ -51,3 +51,41 @@ article
 {
     display: flex;
 }
+footer
+{
+    background-color: #5b359d;
+    color: white;
+    padding-bottom: 20px;
+}
+.textfooter
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.basdepage
+{
+    display: flex;
+    justify-content: space-around;
+
+}
+.coordonnees
+{
+    list-style-type: none;
+    
+}
+
+.accès ,.propos ,.adresse /*titre des rubriques de footer*/
+{
+    color: grey; /*doit être blanc avec des contours gris*/
+}
+li /*police du pied de page pour les listes à puce*/
+{
+    color: white;
+}
+.menuhaut /*police du nav dans le header*/
+{
+    color: black;
+}

@@ -13,8 +13,8 @@
     </div>
 	<nav>
 		<ul id="menu">
-			<li>Accueil</li>
-			<li>Contact</li>
+			<li class="menuhaut">Accueil</li>
+			<li class="menuhaut">Contact</li>
 		</ul>
 	</nav>
 </header>
@@ -56,29 +56,39 @@
 			<p> Amandine restauratrice</p>
 		</div>	
 	</section>
-<footer>
-	<p> Mon petit graphisme - Agence de graphisme basée à Paris</p>
+<footer> <!-- manque les logos des réseaux sociaux, 
+les liens ne fonctionnent pas, à tester plus tard-->
+	<p class="textfooter"> Mon petit graphisme - Agence de graphisme basée à Paris</p>
 	<div class="réseaux">  <!-- marchent pas leurs liens font-->
 		<i class="fab fa-twitter"></i>
 		<i class="fab fa-facebook-f"></i>
 		<i class="fab fa-instagram"></i>
 	</div>
 	<div class="basdepage"> 
-		<ol>Accès rapides
-			<li>Accueil</li>
-			<li>Contact</li>
-		</ol>
-		<ol>A propos
-			<li>Données personnelles</li>
-			<li>Mentions légales</li>
-			<li>Cookies</li>
-		</ol>
-		<ol>Coordonnées
-			<li></li>
-			<li>10 Quai de la Charente</li>
-			<li>75019 Paris</li>
-			<li>01 23 45 67 89</li>
-		</ol>
+		<div class="accès"
+			<h3 class="titrefooter">Accès rapides</h3> <!--titre footer ne sert pas pour la color--->
+			<ul>
+				<li>Accueil</li>
+				<li>Contact</li>
+			</ul>
+		</div>
+		<div class="propos"	
+			<h3 class="titrefooter">A propos</h3>
+			<ul>
+				<li>Données personnelles</li>
+				<li>Mentions légales</li>
+				<li>Cookies</li>
+			</ul>
+		</div>
+		<div class="adresse"
+			<h3 class="titrefooter">Coordonnées</h3>
+			<ul class="coordonnees">
+				<li></li>
+				<li>10 Quai de la Charente</li>
+				<li>75019 Paris</li>
+				<li>01 23 45 67 89</li>
+			</ul>
+		</div>
 	</div>
 </footer>
 </body>  
