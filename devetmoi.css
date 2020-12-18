@@ -1,0 +1,30 @@
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-webfont.eot');
+    src: url('Roboto-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body
+{
+    font-family: Roboto, calibri, corbel; /*roboto marche pas comme ça*/
+    margin-left: 190px;
+    margin-right: 190px;
+    width: 1580px;
+}
+header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+#menu
+{
+    display: flex;
+    justify-content: stretch; /*marche pas*/
+    align-items: center;
+    list-style-type: none;
+}
