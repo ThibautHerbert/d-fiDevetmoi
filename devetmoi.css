@@ -10,47 +10,126 @@
 body
 {
     font-family: Roboto, calibri, corbel; /*roboto marche pas comme ça*/
-    margin-left: 500px;
+    margin-left: 350px;
     margin-right: 190px;
     max-width: 1200px;
+    margin : 20px auto;
 }
+
+/*HEADER*/
+
 header
 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     
 }
 #menu
 {
     display: flex;
-    justify-content: stretch; /*marche pas*/
-    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end; /*marche pas*/
+    align-items: flex-end; /*marche pas*/
     list-style-type: none;
+    padding: 5px;
 }
-#banniere
+.menuhaut
 {
-    height: 450px;
-    width: 40px;
-    float: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: space-between;
+    padding: 5px;
 }
-h1
+
+/*BODY*/
+
+#photo{
+    position: relative;
+}
+#banniereimg /*photo du bureau*/
 {
-    font-size: 3em;
-    color: white;
-    margin-left: 200px;
+    max-width: 1200px;
+   
+}
+#petitgraphismelogo /*image logo violet mon petit graphisme*/
+{
+    position: absolute; /*tester les positions relative ou absolute*/
+    top: 13%;
+    right: 40%;
+    height: 4%;
+    /*text-align center ça marche pas, 
+    ça décale agence de graphisme plus bas 
+    et ça reste à gauche 
+    right ça met à droite de body
+    left à gauche de body sans décaler agence de graphisme ?*/
+}
+h1 /*agence de graphisme*/
+{
+    font-size: 2.2em;
+    color: white; /*doit être blanc sur la photo*/
+    position: absolute; /*tester les positions relative ou absolute*/
+    top: 18%;
+    right: 35%;
+    
+    
+}
+.sousbanniere
+{
+    text-align: center;
+    margin: 20px;
+    font-size: 1.5em;
+}
+h2
+{
+    text-transform: uppercase;
+    text-align: center;
 }
 #corps-blanc
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 300px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 80px;
+    text-align: justify;
 }
-article
+.blocs /*3 articles dans le corps de l'article*/
 {
     display: flex;
+    justify-content: space-around; /*marche pas, je n'arrive pas à espacer les 3 blocs*/
+    text-align: center;
+    padding: 15px;
 }
+.graphisme , .'stratégie' , .illustrations
+{
+    padding: 10px;
+}
+.bloccommentaire
+{
+    text-align: center;
+    margin: 20px;
+    font-size: 1.5em;
+    /*width: 600px; si je mets une taille plus petite,
+    le bloc n'est plus centré*/
+}
+
+.signature
+{
+    
+    font-style: italic;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: .7em;
+    
+}
+
+/*FOOTER*/
+
 footer
 {
     background-color: #5b359d;
